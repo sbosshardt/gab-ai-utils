@@ -1,6 +1,8 @@
 # GAB AI Utils
 
-This project provides utilities for working with AI models through OpenAI-compatible API endpoints.
+**Unofficial utilities and examples for Gab AI subscribers**
+
+This project provides utilities for working with AI models through [Gab AI](https://gab.ai)'s OpenAI-compatible API endpoints.
 
 ## Setup
 
@@ -14,11 +16,13 @@ This project provides utilities for working with AI models through OpenAI-compat
    cp env.example .env
    ```
 
-3. Edit `.env` file with your actual API credentials:
+3. Edit `.env` file with your actual Gab AI API credentials:
    ```
-   API_KEY=your_actual_api_key
-   BASE_URL=your_actual_base_url
+   API_KEY=your_gab_ai_api_key
+   BASE_URL=https://gab.ai/api/v1
    ```
+   
+   You can get your API key from your Gab AI account settings.
 
 ## Scripts
 
@@ -28,7 +32,7 @@ This project provides utilities for working with AI models through OpenAI-compat
 node models-list.js
 ```
 
-Lists all available AI models from your API endpoint with their display names.
+Lists all available AI models from your Gab AI subscription with their display names.
 
 Example output:
 ```
@@ -50,3 +54,13 @@ node chat-hello.js
 ```
 
 Sends a simple "Hello, how are you?" message to the 'arya' model and displays the response.
+
+## Why Gab AI?
+
+- **Multiple AI models**: Access to Claude, GPT, Deepseek, Gemini, and many others in one subscription
+- **Fixed pricing**: Predictable & affordable costs with high usage limits
+- **API Access**: Easy to integrate with existing OpenAI-based code. Use a model of your choice to power software such as Brave Leo, Cursor, n8n, LangChain, etc.
+- **No per-token billing**: Use as much as you need within your subscription limits
+- **No training**: Chats are not used to train any offered models.
+- **Uniqueness**: Arya is a bespoke right wing model. Interesting however not best for coding and reasoning tasks.
+- **Authenticity**: Operated by a small business owner who champions free speech and his Christian faith.
