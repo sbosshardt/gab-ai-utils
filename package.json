@@ -1,0 +1,17 @@
+{
+  "name": "gab-ai",
+  "version": "1.0.0",
+  "description": "GAB AI chat completion example",
+  "main": "models-list.js",
+  "scripts": {
+    "start": "node models-list.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "openai": "^4.67.1",
+    "dotenv": "^16.4.5"
+  },
+  "keywords": ["ai", "openai", "chat"],
+  "author": "",
+  "license": "ISC"
+}
