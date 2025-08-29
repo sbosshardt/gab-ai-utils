@@ -10,17 +10,14 @@ async function main() {
   try {
     // use the /v1/models GET endpoint to see available models
     // like 'arya' or 'gpt-4o'
-    const response = await client.models.list();
+    const response = await client.chat.completions.create({
+      model: 'arya',
+      messages: [
+        { role: 'user', content: 'Hello, how are you?' }
+      ]
+    });
 
-    console.log('Available models:');
-    
-    if (response.body && response.body.models && response.body.models.length > 0) {
-      response.body.models.forEach(model => {
-        console.log(`- ${model.id} (${model.name})`);
-      });
-    } else {
-      console.log('No models found');
-    }
+    console.log(response.choices[0].message.content);
   } catch (error) {
     console.error('Error calling OpenAI API:', error.message);
     process.exit(1);

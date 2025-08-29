@@ -1,6 +1,6 @@
-# GAB AI Utils / Chat Example
+# GAB AI Utils
 
-This project demonstrates how to use the OpenAI client library to make chat completions with custom API endpoints.
+This project provides utilities for working with AI models through OpenAI-compatible API endpoints.
 
 ## Setup
 
@@ -20,18 +20,33 @@ This project demonstrates how to use the OpenAI client library to make chat comp
    BASE_URL=your_actual_base_url
    ```
 
-## Running
+## Scripts
 
-```bash
-npm start
-```
-
-or
+### List Available Models
 
 ```bash
 node models-list.js
 ```
 
-## What it does
+Lists all available AI models from your API endpoint with their display names.
 
-The script makes a chat completion request to the 'arya' model with a simple greeting message and prints the response.
+Example output:
+```
+Available models:
+- arya (Arya)
+- claude-sonnet-3-5 (Claude 3.5 Sonnet)
+- claude-sonnet-4 (Claude Sonnet 4)
+- gpt-4o (GPT 4o)
+- deepseek-r1 (Deepseek R1)
+- o3 (o3)
+- sonar (Perplexity Sonar)
+... and more
+```
+
+### Chat Example
+
+```bash
+node chat-hello.js
+```
+
+Sends a simple "Hello, how are you?" message to the 'arya' model and displays the response.
